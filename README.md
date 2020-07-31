@@ -3,9 +3,9 @@ About recordwhat
 
 Home: https://github.com/klauer/recordwhat
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: EPICS record debugging using ophyd Devices
 
