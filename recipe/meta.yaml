@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -29,17 +29,11 @@ requirements:
     - pyepics
 
 test:
-  requires:
-    - pytest
-  source_files:
-    - tests
   imports:
     - recordwhat
-  commands:
-    - pytest --pyargs recordwhat.tests
 
 about:
   home: https://github.com/klauer/recordwhat
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   #license_file: TODO add LICENSE issue #12
   summary: EPICS record debugging using ophyd Devices
